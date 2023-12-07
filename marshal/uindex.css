@@ -1,0 +1,41 @@
+body{
+    background:linear-gradient(45deg,#051937, #004d7a, #008793)no-repeat;
+}   
+ul{
+    list-style: none;
+}
+li{
+    text-decoration: none;
+}
+li:active{
+    opacity: 0.5;
+}
+.card{
+    width:50%; 
+    background:rgba(0,0,0,0.2);
+    padding:10px;
+    text-align:center;
+    overflow:hidden;
+    margin:5% auto;
+    border-radius:10px;
+    transition: ease-in-out 200ms;
+}
+#line{
+    padding: 2.525em;
+    background:rgba(0,0,0,0.10);
+    border-color: rgb(188, 188, 188);
+    border-style: solid;
+    margin: 3%;
+    text-decoration: none;
+    transition: ease-in-out 200ms;
+}
+#line:hover{
+    background:rgba(0,0,0,0.3);
+}
+#ok{
+    color: white;
+}
+a:link{
+    text-decoration: none;
+    color: #c6f2f7;
+}

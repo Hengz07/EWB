@@ -1,0 +1,94 @@
+<?php
+    
+    session_start();
+        include('../private/connection.php');
+        include('function.php');
+        
+        $mar_data = check_login($con);
+        $id = $_SESSION['mar_id'];
+
+        $sql = "select * from marshal where mar_id = '$id'";
+        $query = mysqli_query($con, $sql);
+        $data = mysqli_fetch_assoc($query);
+        $game_id = $data['game_id'];
+
+        $game = "select * from game where game_code = '$game_id'";
+        $gquery = mysqli_query($con, $game);
+        $gdata = mysqli_fetch_assoc($gquery);
+        $fieldname = $gdata['fieldName'];
+
+        $field = "select * from field where f_name = '$fieldname'";
+        $fquery = mysqli_query($con, $field);
+        $fdata = mysqli_fetch_assoc($fquery);
+        $fgate = $fdata['f_gate'];
+        $fpar = $fdata['fpar'];
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../private/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marshal</title>
+</head>
+<body style="background: lightgreen;">
+
+<nav>
+		 <div class="logo">
+			<h6>Woodball Marshal</h6>
+		 </div>
+		 <input type="checkbox" id="click">
+		 <label for="click" class="menu-btn">
+		 <i class="fas fa-bars"></i>
+		 </label>
+		 <ul>
+			<li><a href="marlogout.php">Logout</a></li>
+		 </ul>
+	</nav>
+
+    <form action="" method="POST">
+		<div class="form">
+			<h1>Woodball Scoreboard</h1>
+            <hr><br>
+            <h3><?php echo $fieldname; ?></h3>
+            <select name="stgate" required>
+		        <option value="">Select Gate</option>
+		        
+		        <?php
+		        	
+		        	for($i=1; $i<=$fgate; $i++ ){ 
+		          	$pquery = "select * from field_par where fpar = '$fpar'";
+		          	$presult = mysqli_query($con, $pquery);
+		          	$result = mysqli_fetch_assoc($presult);
+		        
+		        ?>
+		        
+		        <option value="<?php echo "gate$i"; ?>"><?php echo $i; ?></option>
+	        	<?php } ?>
+	      </select>
+
+	      	<br>
+	      	<bR>
+	      	<hr>
+            <input type="hidden" name="game" value="<?php echo $data['game_id']; ?>">
+			<button type="submit" name="start"><b>START</b></button>
+        </div>
+
+	</form>
+    
+</body>
+</html>
+<?php
+
+	if($_SERVER['REQUEST_METHOD'] == "POST") {
+	$gameid = $_POST['game'];
+
+	header("Location: marshallayout.php?id=$gameid");
+	die;
+	}
+
+?>
