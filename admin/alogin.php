@@ -14,7 +14,7 @@
 	<form method="POST">
 		<nav>
 			 <div class="logo">
-				<a href="../default.php"><h6>Pocket Score Woodball</h6></a>
+				<a href="../default.php"><h6>E-Woodball Sports</h6></a>
 			 </div>
 			 <input type="checkbox" id="click">
 			 <label for="click" class="menu-btn">

@@ -1,28 +1,29 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Organizer</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 
 	<nav>
-		 <div class="logo">
-			<h6>Woodball Organizer</h6>
-		 </div>
-		 <input type="checkbox" id="click">
-		 <label for="click" class="menu-btn">
-		 <i class="fas fa-bars"></i>
-		 </label>
-		 <ul>
+		<div class="logo">
+			<h6>E-Woodball Organizer</h6>
+		</div>
+		<input type="checkbox" id="click">
+		<label for="click" class="menu-btn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<ul>
 			<li><a class="active" href="oindex.php">Home</a></li>
 			<li><a href="profile.php">Update Profile</a></li>
 			<li><a href="ulogout.php">Logout</a></li>
-		 </ul>
+		</ul>
 	</nav>
 	<br>
 
@@ -35,4 +36,5 @@
 	</div>
 
 </body>
+
 </html>

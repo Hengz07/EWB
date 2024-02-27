@@ -9,7 +9,7 @@ session_start();
 
   $user_data = check_login($con);
 
-$details='
+$details= '
 <html>
   <head>
   </head>
@@ -69,7 +69,7 @@ $details='
 
     <nav>
      <div class="logo">
-      <h6>PSWoodball Player</h6>
+      <h6>E-Woodball Player</h6>
   </nav>
 
     <center>

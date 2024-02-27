@@ -19,7 +19,7 @@
 
 	<nav>
 		 <div class="logo">
-			<h6>PSWoodball Admin</h6>
+			<h6>E-Woodball Admin</h6>
 		 </div>
 		 <input type="checkbox" id="click">
 		 <label for="click" class="menu-btn">

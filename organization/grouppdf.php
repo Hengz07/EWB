@@ -13,7 +13,7 @@ session_start();
 //	$g2 = mysqli_query($con,$g1) or die(mysqli_error($con));
 
 
-$details='
+$details= '
 <html>
 <head>
 </head>
@@ -47,7 +47,7 @@ $details='
 <center>
 <nav>
    <div style="color:white;">
-    <h1>Woodball Organizer</h1>
+    <h1>E-Woodball Organizer</h1>
    </div>
 </nav>
 <br>

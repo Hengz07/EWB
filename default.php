@@ -13,7 +13,7 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="Homepage/styles.css?v=<?php echo time(); ?>">
-    <link rel="icon" type="image/x-icon" href="Homepage/logoslagi1.png">
+    <link rel="icon" type="image/x-icon" href="Homepage/eWB.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>E-Woodball Sports</title>
@@ -92,7 +92,7 @@
                             </a>-->
                     </div>
                     <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="home__blob" viewBox="25 20 150 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
@@ -101,7 +101,7 @@
                             </mask>
                             <g mask="url(#mask0)">
 
-                                <image class="home__blob-img" x='15' y='10' xlink:href="Homepage/logoslagi1.png" />
+                                <image class="home__blob-img" x='15' y='10' xlink:href="Homepage/eWB.jpg" />
                             </g>
                         </svg>
                     </div>
@@ -127,44 +127,6 @@
                         <span class="home__scroll-name">Go down</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="animate__animated animate__fadeInLeft about section" id="about">
-            <h2 class="section__title">About Us</h2>
-            <span class="section__subtitle">Supervisor</span>
-
-            <div class="about__container container grid">
-                <img src="Homepage/lecture.jpg" alt="" class="about__img">
-
-
-                <div class="about__data">
-                    <p class="about__description"><b>Fauziah Binti Basok</b><br>Lecturer DH48<br>Information Technology and Communication Department, fauziah@psmza.edu.my</p>
-
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">14+</span>
-                            <span class="about__info-name">Years<br>Work experience in programming & multimedia</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">06+</span>
-                            <span class="about__info-name">Years<br>Research and innovation publication Industry Collaboration Committee</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">04+</span>
-                            <span class="about__info-name">Part Time<br>Corporate Social Responsibility Non Government Organization</span>
-                        </div>
-                    </div>
-                    <!----
-                    <div class="about__buttons">
-                        <a href="organisation.html" class="button button--flex">
-                            Organisation Chart
-                        </a>
-                    </div>---->
                 </div>
             </div>
         </section>
@@ -330,95 +292,9 @@
                     <div class="joinUs__data">
                         <h2 class="joinUs__title">Got any feedback?</h2>
                         <p class="joinUs__description">Feel free come to <b>Comment your Opinion</b> or Contact our Developer</p>
-                        <a href="#contact" class="button button--flex button--white">
-                            Contact Us
-                            <i class="uil uil-message joinUs__icon button__icon"></i>
-                        </a>
-                    </div>
-                    <img src="Homepage/logo.png" alt="" class="joinUs__img">
-                </div>
-            </div>
-        </section>
 
-        <!--==================== Develop Team ====================-->
-        <section class="animate__animated animate__fadeInLeft developTeam section" id="developTeam">
-            <h2 class="section__title">Developer Team</h2>
-            <span class="section__subtitle">Final Year Project(PS Woodball)</span>
-
-            <div class="developTeam__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--==================== Develop Member 1====================-->
-                    <div class="developTeam__content swiper-slide">
-                        <div class="developTeam__data">
-                            <div class="developTeam__header">
-                                <img src="Homepage/sahif.jpg" alt="" class="developTeam__img">
-
-                                <div>
-                                    <h3 class="developTeam__name">MUHD SAHIF AS SANI BIN MOHAMAD</h3>
-                                    <span class="developTeam__client">Web Developer</span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                            </div>
-                        </div>
-
-                        <p class="developTeam__description">Hi, my name Sahif. I'm the Web Developer and auditor of this final year project</p>
-                    </div>
-                    <!--==================== Develop Member 2====================-->
-                    <div class="developTeam__content swiper-slide">
-                        <div class="developTeam__data">
-                            <div class="developTeam__header">
-                                <img src="Homepage/Azidpicture.png" alt="" class="developTeam__img">
-
-                                <div>
-                                    <h3 class="developTeam__name">MUHAMMAD AZID BIN ROSLAN</h3>
-                                    <span class="developTeam__client">Web Developer</span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                            </div>
-                        </div>
-
-                        <p class="developTeam__description">Hi, my name is Azid. I'm the Web Developer and auditor of this final year project.</p>
-                    </div>
-                    <!--==================== Develop Member 3====================-->
-                    <div class="developTeam__content swiper-slide">
-                        <div class="developTeam__data">
-                            <div class="developTeam__header">
-                                <img src="Homepage/jijo.jpg" alt="" class="developTeam__img">
-
-                                <div>
-                                    <h3 class="developTeam__name">AZIZUL HAKIM BIN HASSAN</h3>
-                                    <span class="developTeam__client">Web Developer</span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                                <i class="uil uil-star developTeam__icon-star"></i>
-                            </div>
-                        </div>
-
-                        <p class="developTeam__description">Hi, my name is Azizul Hakim. I'm the Web Developer and auditor of this final year project.</p>
                     </div>
                 </div>
-                <!--Add Pagination-->
-                <div class="swiper-pagination swiper-pagination-developTeam"></div>
             </div>
         </section>
 
@@ -494,7 +370,7 @@
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
-                    <h1 class="footer__title">EWS</h1>
+                    <h1 class="footer__title">eWB</h1>
                     <span class="footer__subtitle">Woodball Terengganu Club</span>
                 </div>
 
